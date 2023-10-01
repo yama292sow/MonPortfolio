@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ecommerce en html et css</title>
+	<style>
+
+		body{
+			margin: 0px;
+			padding: 0px;
+			box-shadow: 3px 3px 5px #ccc,-3px -3px 5px #ccc;
+		}
+		nav{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-left: 100px;
+			padding-right: 100px;
+			box-shadow: 3px 3px 5px #ccc,-3px -3px 5px #ccc;
+			height: 60px;
+			margin-top: 20px;
+           
+		}
+
+		nav h1{
+			font-size: 27px;
+			text-align: center;
+			margin-top: 7px;
+			font-family: system-ui;
+			font-weight: bolder;
+			color:black ;
+			text-shadow:1px 1px 2px #000;
+		}
+
+		nav h1 span{
+			color: red;
+		}
+
+		nav ul{
+			list-style-type: none;
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 50px;
+
+		}
+
+        nav ul li {
+        	margin-top:7px;
+        }
+		nav ul li a{
+			text-decoration: none;
+			font-size: 17px;
+			font-family: sans-serif;
+			color: #717171;
+            font-weight: bolder;
+
+		}
+
+        nav ul li a:hover{
+        	color: lightsalmon;
+        }
+
+		nav p{
+			background-color: red;
+			border: 2px solid red;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top:5px;
+			box-shadow: 2px 2px 3px #ccc, -1px -1px 3px #ccc;
+			
+		}
+
+		nav p a{
+			text-decoration: none;
+			font-size: 20px;
+			color: white;
+			font-weight: bolder;
+		}
+
+		header{
+			
+			margin-top: 200px;
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+
+		#main{
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 150px;
+		}
+
+		#main .left{
+            width: 600px;
+            margin-top: -70px;
+		}
+
+		#main .left h1{
+			font-size: 55px;
+			text-transform: capitalize;
+			font-family: system-ui;
+			font-weight: bolder;
+			color:black ;
+			text-shadow:1px 1px 2px #000;
+		}
+
+		#main .left h1 span{
+			color: red;
+		}
+
+		#main .left p{
+			font-size: 20px;
+			color: #ccc;
+			font-family:system-ui;
+		}
+
+		#main .left .parc a:hover{
+			background-color: black;
+			text-shadow: 3px 3px 5px white;
+		}
+
+		#main .left p a{
+			text-decoration: none;
+			font-size: 17px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding:10px ;
+			color: white;
+			box-shadow: 3px 3px 5px #ccc;
+			font-weight: bolder;
+			font-family: system-ui;
+			background-color: red;
+
+		}
+
+		#main .right{
+            width: 600px;
+		}
+
+		#main .right img{
+            width: 500px;
+            height: 500px;
+            margin-top: -100px;
+		}
+
+		section{
+			
+			margin-top: 200px;
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+        
+       section .barre1{
+       	 margin-top: 100px;
+       	 margin-left: 525px;
+       	 border: 3px solid red;
+       	 width: 290px;
+       	 border-radius: 100px;
+       	 
+       }
+
+       section .barre2{
+       		
+	       	margin-left: 570px;
+	       	border: 3px solid red;
+	       	width: 290px;
+	       	margin-top: -35px;
+	       	border-radius: 100px;
+	       	margin-bottom: 100px;
+
+       }
+
+       section h1{
+       	    margin-top: -13px;
+       		font-size: 37px;
+       		font-weight: bolder;
+       		font-family: system-ui;
+       		text-align: center;
+       		margin-left: 10px;
+       		text-transform: uppercase;
+
+       }
+
+       section .cards{
+       	display: grid;
+       	grid-template-columns: 1fr 1fr 1fr;
+       	justify-content: center;
+       }
+
+        section .cards .card{
+        	cursor: pointer;
+        	row-gap: 30px;
+        	column-gap: 30px;
+        }
+
+       section .cards .card img{
+       	width: 400px;
+       	height: 200px;
+       }
+       
+       section .cards .card h2{
+       	text-align: center;
+       	font-size: 20px;
+        text-transform: uppercase;
+       }
+
+       section .cards .card:hover{
+          transform: scale(1.1,1.1);
+          transition: 1s;
+       }
+
+       section .cards .card .prix{
+          font-size: 20px;
+          color: red;
+          font-weight: bolder;
+          text-align: center;
+       }
+
+       section .cards .card .desc{
+       	  text-align: center;
+       }
+
+       section .cards .card a{
+       	  text-decoration: none;
+       	  font-size: 17px;
+       	  font-weight: bolder;
+       	  box-shadow: 3px 3px 5px #ccc,-3px -3px 5px #ccc;
+       	  background-color: red;
+       	  color: white;
+       	  padding-left: 15px;
+          padding-right: 15px;
+          padding: 10px;
+       }
+
+       #sec2{
+       	margin-top: -50px;
+       	display: flex;
+       	column-gap: 50px;
+       	justify-content: center;
+       }
+
+       #sec2 .div{
+
+       }
+
+       #sec2 img{
+       	width: 30px;
+       	height: 30px;
+       	color: red;
+       	padding-left: 100px;
+         background-color: red;
+       	border-radius: 100%;
+       }
+
+
+	</style>
+</head>
+<body>
+	<!--- nav ---->
+	<nav>
+		<h1>Luxe<span>Cars</span></h1>
+		<ul>
+			<li><a href="">Accueil</a></li>
+			<li><a href="">Vehicules</a></li>
+			<li><a href="">Services</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+		<p><a href="">LOGIN</a></p>
+	</nav>
+	<!--- Fin nav ---->
+
+	<!--- header---->
+	<header>
+		<div id="main">
+			<!--notre div a gauche--->
+			<div class="left">
+				<h1>buy <span>your car</span> cheaper from us</h1>
+				<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Inventore illo saepe qui repellat ipsum distinctio. Placeat deserunt ab quod, praesentium magnam esse minima modi nostrum ipsum, quas eveniet fugit, vitae.</p>
+				<p class="parc"><a href="">Buy NOW</a></p>
+			</div>
+			<!--Fin de notre div a gauche--->
+
+			<!--notre div a droite--->
+             <div class="right">
+             	<img src="assets/voiture1.png" alt="">
+             </div>
+			<!--Fin de notre div a droite--->
+		</div>
+	</header>
+	<!--- Fin header---->
+	<!--- Section---->
+	<section>
+		<hr class="barre1">
+		<h1>nos vehicules</h1>
+		<hr class="barre2">
+		<!---triple card 1-->
+		<div class="cards">
+			<div class="card">
+				<img src="assets/voiture5.png" alt="">
+				<h2>Titre</h2>
+				<p class="prix">300 000$</p>
+				<p class="desc"><a href="">ACHETER MAINTENANT</a></p>
+			</div>
+			<div class="card">
+				<img src="assets/voiture3.png" alt="">
+				<h2>Titre</h2>
+				<p class="prix">300 000$</p>
+				<p class="desc"><a href="">ACHETER MAINTENANT</a></p>
+			</div>
+			<div class="card">
+				<img src="assets/voiture9.png" alt="">
+				<h2>Titre</h2>
+				<p class="prix">300 000$</p>
+				<p class="desc"><a href="">ACHETER MAINTENANT</a></p>
+			</div>
+		</div>
+		<!---Fin triple card 1-->
+		<!---triple card 2-->
+		<div class="cards">
+			<div class="card">
+				<img src="assets/voiture8.png" alt="">
+				<h2>Titre</h2>
+				<p class="prix">300 000$</p>
+				<p class="desc"><a href="">ACHETER MAINTENANT</a></p>
+			</div>
+			<div class="card">
+				<img src="assets/voiture7.png" alt="">
+				<h2>Titre</h2>
+				<p class="prix">300 000$</p>
+				<p class="desc"><a href="">ACHETER MAINTENANT</a></p>
+			</div>
+			<div class="card">
+				<img src="assets/voiture2.png" alt="">
+				<h2>Titre</h2>
+				<p class="prix">300 000$</p>
+				<p class="desc"><a href="">ACHETER MAINTENANT</a></p>
+			</div>
+		</div>
+		
+		<!---Fin triple card 2-->
+		<hr class="barre1">
+		<h1>nos vehicules</h1>
+		<hr class="barre2">
+	</section>
+	<section id="sec2">
+		<div class="div">
+			<img src="assets/paper.png" alt="">
+			<h2>Depannage</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quaerat .
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi, dolorum eaque animi? Aliquid, molestias.</p>
+			<button>Lire Plus</button>
+		</div>
+		<div class="div">
+			<img src="assets/paper.png" alt="">
+			<h2>Depannage</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quaerat .
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita suscipit optio inventore? Qui, molestias unde.</p>
+			<button>Lire Plus</button>
+		</div>
+		<div class="div">
+			<img src="assets/paper.png" alt="">
+			<h2>Depannage</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quaerat .
+			Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Nisi, vitae animi officia, similique sunt voluptate?</p>
+			<button>Lire Plus</button>
+		</div>
+		<div></div>
+		<div></div>
+	</section>
+
+	<!--- Fin Section---->
+</body>
+</html>
